@@ -2,17 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/fireba
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-/*
-  Sustituye estos valores por los datos de:
-  Firebase Console > Configuración del proyecto > Tus apps > Aplicación web
-*/
 const firebaseConfig = {
-  apiKey: "REEMPLAZAR_API_KEY",
-  authDomain: "REEMPLAZAR_AUTH_DOMAIN",
-  projectId: "REEMPLAZAR_PROJECT_ID",
-  storageBucket: "REEMPLAZAR_STORAGE_BUCKET",
-  messagingSenderId: "REEMPLAZAR_MESSAGING_SENDER_ID",
-  appId: "REEMPLAZAR_APP_ID"
+  apiKey: "AIzaSyAmrjGjhd0UYl4r0NjC0p5x8H1ko46p6Fw",
+  authDomain: "jordania-erp.firebaseapp.com",
+  projectId: "jordania-erp",
+  storageBucket: "jordania-erp.firebasestorage.app",
+  messagingSenderId: "578453002858",
+  appId: "1:578453002858:web:f7a75181f9351936d40813"
 };
 
 const app = initializeApp(firebaseConfig);

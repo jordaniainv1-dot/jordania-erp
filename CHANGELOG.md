@@ -1,11 +1,11 @@
 # Changelog
 
-## 0.1.0
+## 0.2.0
+- Módulo de empleados conectado a Firestore.
+- Registro, edición, búsqueda y filtros.
+- Validación de cédula única.
+- Archivado lógico de colaboradores.
+- Dashboard con indicadores reales.
 
-- Se creó la estructura inicial de Jordania ERP.
-- Se agregó inicio de sesión con Firebase Authentication.
-- Se agregó dashboard protegido.
-- Se agregó cierre de sesión.
-- Se agregó menú lateral responsive.
-- Se agregó configuración central de Firebase.
-- Se configuró Firebase Hosting para publicar desde `src`.
+## 0.1.0
+- Login y dashboard inicial.

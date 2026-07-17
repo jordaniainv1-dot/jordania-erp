@@ -1,35 +1,24 @@
-# Jordania ERP
+# Jordania ERP v0.2.0
 
-Versión inicial del núcleo de Jordania ERP.
+Actualización del módulo de Recursos Humanos.
 
 ## Incluye
+- Registro y edición de colaboradores.
+- Búsqueda por nombre, cédula o cargo.
+- Filtros por departamento y estado.
+- Validación para evitar cédulas duplicadas.
+- Archivado lógico: no elimina el expediente.
+- Dashboard conectado a Firestore.
+- Sucursal fija: Aguadulce.
+- Los 18 departamentos indicados por la empresa.
 
-- Inicio de sesión con Firebase Authentication
-- Dashboard protegido
-- Menú lateral adaptable
-- Cierre de sesión
-- Base visual reutilizable
-- Configuración de Firebase separada
+## Instalación
+Copia el contenido de este paquete dentro de la carpeta principal de `jordania-erp` y reemplaza los archivos cuando Windows lo solicite.
 
-## Configuración
+**No reemplaces ni borres `src/config/firebase.js`.** Este paquete no lo incluye.
 
-1. Abre `src/config/firebase.js`.
-2. Sustituye los valores de ejemplo por la configuración de tu aplicación web de Firebase.
-3. En Firebase Authentication activa `Correo electrónico/Contraseña`.
-4. Crea al menos un usuario desde Authentication > Users.
-5. Ejecuta `firebase deploy`.
+Después ejecuta:
 
-## Estructura
-
-- `src/index.html`: inicio de sesión
-- `src/pages/dashboard.html`: panel principal
-- `src/config/firebase.js`: credenciales de Firebase
-- `src/js/auth.js`: autenticación
-- `src/js/login.js`: lógica del login
-- `src/js/dashboard.js`: lógica del panel
-- `src/css/main.css`: estilos generales
-- `src/css/dashboard.css`: estilos del panel
-
-## Nota
-
-Esta versión no utiliza Firebase Storage.
+```bash
+firebase deploy --only hosting
+```
