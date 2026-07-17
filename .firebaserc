@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "inventario-jh"
-  }
+    "default": "jordania-erp",
+    "jordania-erp": "jordania-erp"
+  },
+  "targets": {},
+  "etags": {}
 }
