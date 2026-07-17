@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#153b6a">
+  <title>Dashboard | Jordania ERP</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">J</div>
+        <span>Jordania ERP</span>
+      </div>
+
+      <div class="nav-section-label">Principal</div>
+      <nav>
+        <a class="nav-link active" href="./dashboard.html">
+          <span class="nav-icon">⌂</span>
+          Dashboard
+        </a>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">♙</span>
+          Empleados
+        </a>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">▤</span>
+          Contratos
+        </a>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">☀</span>
+          Vacaciones
+        </a>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">✚</span>
+          Incapacidades
+        </a>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">✎</span>
+          Permisos
+        </a>
+      </nav>
+
+      <div class="nav-section-label">Administración</div>
+      <nav>
+        <a class="nav-link" href="#" aria-disabled="true">
+          <span class="nav-icon">⚙</span>
+          Configuración
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="logout-button" id="logoutButton" type="button">
+          Cerrar sesión
+        </button>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <section class="main-content">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú">
+          ☰
+        </button>
+
+        <div class="topbar-title">
+          <h1>Dashboard</h1>
+          <p id="currentDate"></p>
+        </div>
+
+        <div class="user-chip">
+          <div class="user-avatar" id="userInitial">U</div>
+          <div>
+            <small>Sesión activa</small>
+            <strong id="userEmail">Cargando...</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="welcome-card">
+          <h2>Bienvenido a Jordania ERP</h2>
+          <p>
+            Este es el núcleo inicial del sistema. En la próxima versión
+            conectaremos el módulo de empleados y el expediente digital 360°.
+          </p>
+        </section>
+
+        <section class="metrics-grid">
+          <article class="metric-card">
+            <div class="metric-icon">♙</div>
+            <strong>0</strong>
+            <span>Empleados registrados</span>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-icon">▤</div>
+            <strong>0</strong>
+            <span>Contratos por vencer</span>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-icon">☀</div>
+            <strong>0</strong>
+            <span>Vacaciones activas</span>
+          </article>
+
+          <article class="metric-card">
+            <div class="metric-icon">✚</div>
+            <strong>0</strong>
+            <span>Incapacidades activas</span>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Actividad reciente</h3>
+              <span class="badge">Próximamente</span>
+            </div>
+            <div class="empty-state">
+              <div>
+                <strong>No hay movimientos registrados</strong>
+                La actividad aparecerá cuando agreguemos empleados y expedientes.
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-heading">
+              <h3>Accesos rápidos</h3>
+            </div>
+
+            <div class="quick-list">
+              <div class="quick-item">
+                <div class="quick-item-icon">＋</div>
+                <div>
+                  <strong>Registrar empleado</strong>
+                  <span>Disponible en la versión 0.2.0</span>
+                </div>
+              </div>
+
+              <div class="quick-item">
+                <div class="quick-item-icon">⚙</div>
+                <div>
+                  <strong>Configuración inicial</strong>
+                  <span>Sucursal Aguadulce y departamentos</span>
+                </div>
+              </div>
+
+              <div class="quick-item">
+                <div class="quick-item-icon">▤</div>
+                <div>
+                  <strong>Expediente 360°</strong>
+                  <span>Contratos, vacaciones y permisos</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html>

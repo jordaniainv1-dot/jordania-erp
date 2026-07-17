@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#153b6a">
+  <title>Iniciar sesión | Jordania ERP</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-hero">
+      <div class="brand">
+        <div class="brand-mark">J</div>
+        <span>Jordania ERP</span>
+      </div>
+
+      <div class="hero-copy">
+        <h1>La operación de Jordania, en un solo lugar.</h1>
+        <p>
+          Plataforma interna para gestionar recursos humanos, expedientes,
+          contratos, vacaciones, permisos y futuros módulos empresariales.
+        </p>
+      </div>
+
+      <div class="hero-footer">
+        Almacén Jordania · Aguadulce
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <h2>Bienvenido</h2>
+        <p>Ingresa con el usuario creado en Firebase Authentication.</p>
+
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="email">Correo electrónico</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              autocomplete="email"
+              placeholder="usuario@jordania.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Contraseña</label>
+            <div class="input-wrap">
+              <input
+                class="form-control password-control"
+                id="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Tu contraseña"
+                required
+              >
+              <button class="password-toggle" id="togglePassword" type="button">
+                Mostrar
+              </button>
+            </div>
+          </div>
+
+          <button class="primary-button" id="loginButton" type="submit">
+            Iniciar sesión
+          </button>
+
+          <div class="form-message" id="loginMessage" aria-live="polite"></div>
+        </form>
+
+        <div class="login-note">
+          Esta versión usa Firebase Authentication y Firestore. No utiliza
+          Firebase Storage.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/login.js"></script>
+</body>
+</html>
